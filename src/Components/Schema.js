@@ -5,7 +5,7 @@ const gbValidationSchema = yup.object().shape({
   line1: yup.string().optional(), // Optional house number
   line2: yup.string().optional(), // Line 2 can be blank
   country: yup.string().required('Country is required'),
-  postcode: yup.string().matches(/^[A-Z]{1,2}[0-9][A-Z0-9]? [0-9][A-Z]{2}$/, 'Invalid postcode').required('Postcode is required'),
+  postcode: yup.string().matches(/^[A-Za-z]{2}\d{1}\d{1,2}[A-Za-z]{2}$/, 'Invalid postcode').required('Postcode is required'),
 });
 
 // Validation schema for FR addresses
