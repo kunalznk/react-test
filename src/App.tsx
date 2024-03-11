@@ -1,8 +1,15 @@
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Login from "./pages/login";
 
 function App() {
   return (
-    <div className="bg-red-600 animate-pulse h-dvh w-full mark">
-      
+    <div className="h-dvh w-full">
+      <Header />
+      <div className="h-[88vh]">
+      <Login />
+      </div>
+      <Footer />
     </div>
     );
 }
