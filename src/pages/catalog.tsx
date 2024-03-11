@@ -12,7 +12,7 @@ const Catalog = () => {
     </div>
     <div className="flex flex-col gap-3">
     <div className="flex flex-col sm:flex-row sm:justify-between sm:items-end">
-        <Typography variant="h5"> Casual</Typography>
+        <Typography placeholder="" variant="h5"> Casual</Typography>
         <div className="flex gap-1 items-end">
         <p className="text-gray-600 text-sm">
            Showing 1-10 of 100 Products 
@@ -23,7 +23,7 @@ const Catalog = () => {
         <p className=" text-sm font-medium">
            Most Popular 
         </p>
-        <Button variant="text" className="p-[2px] rounded-sm">
+        <Button placeholder="" variant="text" className="p-[2px] rounded-sm">
                 <ChevronDownIcon className="size-4" />
             </Button>
         </div>

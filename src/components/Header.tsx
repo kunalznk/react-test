@@ -17,6 +17,7 @@ import {
       >
         <div className="flex flex-wrap items-center justify-between gap-y-4 text-white">
           <Typography
+          placeholder=""
             as="a"
             href="#"
             variant="h6"
@@ -25,15 +26,17 @@ import {
             Exclusive
           </Typography>
           <div className="ml-auto flex gap-1 md:mr-4">
-            <IconButton variant="text" color="white">
+            <IconButton placeholder="" variant="text" color="white">
               <Cog6ToothIcon className="h-4 w-4" />
             </IconButton>
-            <IconButton variant="text" color="white">
+            <IconButton placeholder="" variant="text" color="white">
               <BellIcon className="h-4 w-4" />
             </IconButton>
           </div>
           <div className="relative flex w-full gap-2 md:w-max">
             <Input
+            crossOrigin=""
+            placeholder=""
               type="search"
               color="white"
               label="Type here..."
@@ -43,6 +46,7 @@ import {
               }}
             />
             <Button
+            placeholder={""}
               size="sm"
               color="white"
               className="!absolute right-1 top-1 rounded"

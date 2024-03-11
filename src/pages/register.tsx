@@ -1,4 +1,4 @@
-import { Button, Card, Input, Typography } from "@material-tailwind/react";
+import { Button, Typography } from "@material-tailwind/react";
 import CustomInput from '../components/CustomInput';
 
 const Register = () => {
@@ -12,7 +12,7 @@ const Register = () => {
     </div>
     <div className="w-full flex items-center sm:justify-center">
     {/* <form> */}
-    <div placeholder="" className="w-full max-w-md flex flex-col gap-3 p-6 shadow-md rounded-lg">
+    <div className="w-full max-w-md flex flex-col gap-3 p-6 shadow-md rounded-lg">
     <Typography variant="h2" placeholder="">Create an account</Typography>
     <Typography variant="paragraph" placeholder="">Enter your details below </Typography>
     <CustomInput />

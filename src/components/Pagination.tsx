@@ -5,7 +5,7 @@ import { ArrowRightIcon, ArrowLeftIcon } from "@heroicons/react/24/outline";
 const Pagination = () => {
   const [active, setActive] = React.useState(1);
  
-  const getItemProps = (index) =>
+  const getItemProps = (index : number) =>
     ({
       variant: active === index ? "filled" : "text",
       color: "gray",
@@ -27,6 +27,7 @@ const Pagination = () => {
   return (
     <div className="flex items-center gap-4">
       <Button
+      placeholder={""}
         variant="text"
         className="flex items-center gap-2 px-2"
         onClick={prev}
@@ -42,6 +43,7 @@ const Pagination = () => {
         <IconButton {...getItemProps(5)}>5</IconButton>
       </div>
       <Button
+      placeholder={""}
         variant="text"
         className="flex items-center gap-2 px-2"
         onClick={next}
